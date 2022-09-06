@@ -27,7 +27,7 @@ resource "azurerm_public_ip" "my_terraform_public_ip" {
   allocation_method   = "Dynamic"
 }
 
-# Create Network Security Group and rule
+# Create Network Security Group[NSG] and rule
 resource "azurerm_network_security_group" "my_terraform_nsg" {
   name                = "Tf-NSG"
   location            = azurerm_resource_group.rg.location
